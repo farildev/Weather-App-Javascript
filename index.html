@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <script src="./assets/scripts/app.js\"></script>
+    <div class="app">
+        <div class="app__header">
+            <h1>Daily Forecast</h1>
+            <form action="" class="form__control">
+                <input type="text" placeholder="Enter the city...">
+                <button type="submit"><i class='bx bx-search'></i></button>
+            </form>
+        </div>
+        <div class="app__content">
+            <div class="temp">15°C</div>
+            <div class="city">Manhattan, US</div>
+        </div>
+    </div>
+    <script src="./assets/scripts/app.js"></script>
 </body>
 </html>
