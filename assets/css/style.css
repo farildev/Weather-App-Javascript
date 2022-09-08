@@ -30,7 +30,7 @@ html{
     justify-content: space-between;
     padding: 1rem 0;
 }
-.form__control input{
+.form__control #search-bar{
     background-color: #000000;
     border: none;
     outline: none;
