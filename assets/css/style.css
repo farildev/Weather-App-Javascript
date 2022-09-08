@@ -30,7 +30,7 @@ html{
     justify-content: space-between;
     padding: 1rem 0;
 }
-.form__control #search-bar{
+.form__control #searchbar{
     background-color: #000000;
     border: none;
     outline: none;
@@ -39,7 +39,7 @@ html{
     width: 80%;
     font-size: 20px;
 }
-.form__control input:focus{
+.form__control searchbar:focus{
     border-bottom: 1px solid white;
     transition: 300ms all ease-in-out;
 }
