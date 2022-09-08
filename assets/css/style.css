@@ -23,6 +23,7 @@ html{
 }
 .app__header h1{
     font-weight: 400;
+    font-size: 32px;
 }
 .form__control{
     display: flex;
@@ -34,20 +35,30 @@ html{
     border: none;
     outline: none;
     padding: 1rem;
-    border-radius: 14px;
     color: white;
     width: 80%;
     font-size: 20px;
 }
+.form__control input:focus{
+    border-bottom: 1px solid white;
+    transition: 300ms all ease-in-out;
+}
 .form__control button{
     background-color: #000000;
     color: white;
-    padding: 0.8rem;
-    border-radius: 14px;
+    padding: 0.8rem 1rem;
+    font-size: 16px;
+    cursor: pointer;  
+    transition: 300ms all ease-in-out;
+}
+.form__control button:hover{
+    background-color: white;
+    color: #000000;
+    transition: 300ms all ease-in-out;
 }
 .app__content{
     margin-top: 20px;
 }
 .app__content .temp{
-    font-size: 48px;
+    font-size: 64px;
 }
