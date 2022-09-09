@@ -7,13 +7,17 @@ const getResult = (cityName) => {
     .then(weather => {
         return weather.json()
     })
-    .then (displayResult)
+    .then (displayResult);
 }
+
 
 const setQuery = function(e) {
     if(e.key == 'Enter')
     getResult(searchBar.value)
 }
+
+const searchBar = document.getElementById('searchbar');
+searchBar.addEventListener('keypress', setQuery);
 
 const displayResult = (result) => {
     let city = document.querySelector('.city')
@@ -29,7 +33,6 @@ const displayResult = (result) => {
     wind.innerText = `${result.wind.speed} km/h`
 }
 
-const searchBar = document.getElementById('searchbar');
-searchBar.addEventListener('keypress', setQuery);
+
 
 
